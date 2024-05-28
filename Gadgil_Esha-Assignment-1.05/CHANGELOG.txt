@@ -1,0 +1,52 @@
+Date : Monday Feb 7  12:00
+Making changes to Assignment 1.01 to accomodate 1.02
+Adding Stuct CurrMap
+Modifying updateX and updateY
+
+Date: Monday Feb 7   12:30
+Generating 401 * 401 pointers array 
+
+Date: Monday Feb 7   2:00
+Adding various commands to switch maps
+
+Date:Monday  Feb 7   4:00
+Adding README, CHANGELOG, Makefile
+
+Date: Feb 14   12:00
+Breaking code down into smaller modules
+
+Date:Feb 14   2:00
+Adding djikstra functionality to find shortest path and then priting hiker and rival maps
+
+Date:Feb 15  1:00
+Fixing map to map function to print curvy roads that don't stay at the last row after going through the gate
+
+Date : Feb 15 7:00
+Fixing pokemart and pokecenter code that causes segmentation fault.
+
+Date:Feb 16 7:00
+Changing Makefile
+
+Date: Feb 25 12:00
+Commented out irrelevant code and started a game loop that queues and dequeues characters
+
+Date: Feb 25 2:00
+Adjusted the printHmap and printRmap functions
+
+Date: Feb 28 12:50 
+Changed readme 
+
+Date : March 9 12:00
+Linked in ncurses
+Adding color to map using ncurses
+
+Date: March 11 13:00
+Added functionality to move the player character using various commmands 
+
+Date: March 12 13:00
+Changed README
+
+
+
+
+
