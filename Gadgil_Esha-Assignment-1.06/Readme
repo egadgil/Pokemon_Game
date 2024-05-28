@@ -1,0 +1,15 @@
+Programming Project 1.06: Moving to Neighboring Maps and Porting to C++
+
+
+In this iteration of our ongoing game development project, we reintroduce the ability for the player character (PC) to move between interconnected maps, a feature first developed in project 1.02. This functionality is now integrated with the Curses-based user interface introduced in the previous project. Moreover, this project involves porting our existing C codebase to C++, including the transition from structures to classes, and the incorporation of object-oriented principles such as inheritance.
+
+Features
+Movement Between Maps: Utilize the movement keys to navigate through gates into neighboring maps. Transitioning through a gate places the PC on the corresponding road square of the adjacent map.
+NPC Movement Restrictions: Non-player characters (NPCs) are unable to move through gates.
+Preserved Game State Across Maps: NPCs and turn queues are maintained when moving through gates. Maps without the PC are paused in time, keeping their state until revisited.
+Fly Command: Implementing the 'fly' feature, allowing the player to move to any map by entering X and Y coordinates through the Curses interface.
+Porting to C++: Transition the entire codebase from C to C++, updating file extensions, makefiles, and refactoring structures into classes.
+
+
+use "make all" to compile
+then ./poke327 to run 

@@ -1,0 +1,32 @@
+
+COM S 327, Spring 2024 Programming Project 1.09: Pokémon Battles Overview
+
+This update introduces the Pokémon battle minigame, focusing on turn-based interactions between trainers or between a trainer and a wild Pokémon. The game simplifies existing Pokémon battle mechanics by excluding status effects and Pokémon abilities due to their complexity.
+
+Key Battle Mechanics:
+Turn-based Actions: Each participant takes turns, choosing actions such as using a Pokémon move, switching Pokémon, using items, or attempting to flee.
+Move Priority and Execution:
+Non-move actions (like using items) are prioritized.
+If both parties choose Pokémon moves, the one with higher priority executes first. If priorities tie, the faster Pokémon goes first. Ties in speed are resolved randomly.
+Moves can miss, simplified to a direct percentage check (rand() mod 100 ≤ moves.accuracy).
+Damage calculation omits complex elements, using only basic stats and types:
+
+
+Damage = (((2 × Level + 2) × Power × Attack / Defense + 2) / 50) × Critical × random × STAB × Type
+Critical hits occur based on a random threshold related to the Pokémon's speed.
+Battle Options:
+Fight: Pokémon uses a chosen move.
+Bag: Use items like potions for healing or Pokéballs for capturing wild Pokémon.
+Run: Only possible against wild Pokémon, with a hard-coded chance of success.
+Pokémon: Switch the active Pokémon; uses up a turn.
+Implementation Notes:
+Begin with limited items: a few potions, revives, and Pokéballs.
+Capturing mechanics are simplified for now: capturing succeeds if the trainer has fewer than 6 Pokémon.
+NPCs select moves randomly and only switch Pokémon upon knockout.
+Pokémon do not automatically heal after battles; healing occurs at Pokémon Centers or via items from the bag outside battles.
+AI Considerations:
+AI behavior can be simple, prioritizing random moves and basic tactics like switching out a defeated Pokémon.
+This summary captures the essence of the programming project, focusing on the simplified battle system setup and essential game mechanics.
+
+MAKE ALL and then ./poke327
+Author credit -Used professors code till 1.08

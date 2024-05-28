@@ -1,0 +1,18 @@
+COMS- 327 
+Assignment 1.10/2 - Choose Your Own Assignment
+Esha Gadgil
+
+
+The game features automatic ship placement, weather effects, sound effects, and customizable board sizes and ship configurations.
+
+This is an implementation of a battleship game in C++.
+
+To make open terminal and type main and then run ./battleships.
+
+
+Choose number of ships , size and their location 
+
+Then the player and computer AI takes turns targetting each others board.
+
+Use this format for placing ships 0 0 V
+And this format to attack 0 0 

@@ -1,0 +1,30 @@
+Programming Project 1.08: Loading Pokémon
+
+Overview
+In this phase of the project, we focus on loading Pokémon into our game from parsed data files. While the complexities of Pokémon main series games (MSGs) are simplified, we provide a robust framework for encountering Pokémon. This implementation sets the groundwork for future expansions including battling and capturing, which will be tackled in subsequent projects.
+
+Features
+Pokémon Encounters: When moving through tall grass, each step has a 10% chance of triggering an encounter with any Pokémon from our dataset of 1092 species. Encounters include everything from common Pokémon to legendary and mythical creatures.
+Level Calculation: Pokémon levels are determined by the Manhattan distance from the origin point on the map:
+Up to a distance of 200, the Pokémon level ranges from 1 to half the distance value.
+Beyond a distance of 200, the minimum level is calculated as (distance - 200) / 2, with the maximum level capped at 100.
+Moves Selection: Pokémon know up to two moves based on their level. The moves are selected uniformly from the Pokémon’s level-up learnset.
+Stats Generation: Pokémon stats are calculated using the formula:
+HP = ((((base_stat + IV) * 2) * level) / 100) + level + 10
+Other stats = ((((base_stat + IV) * 2) * level) / 100) + 5
+Gender and Shiny Mechanics: Simplified mechanics for Pokémon gender and shiny probability. Shiny Pokémon have a simplified 1 in 8192 chance, determined by a random function.
+Simplifications
+Gender and Shiny Rates: All Pokémon have an equal chance of being male or female, and the shiny rate is determined by rand() % 8192 == 0.
+IVs and Stats: IVs for each stat are uniformly distributed between 0 and 15. We are omitting Effort Values (EVs) to simplify growth calculations.
+Encounter Mechanics: Unlike MSGs, any Pokémon can appear in any tall grass, regardless of game lore or typical habitat.
+Data Files and Handling
+Pokémon Moves: Sourced from pokemon_moves.csv, where moves are matched with Pokémon species and appropriate levels from their respective games. Due to disparities in game versions post-Pokémon Sword and Shield (Dexit), care must be taken with version group IDs.
+Stat Mapping: pokemon_stats.csv and stats.csv are used to map Pokémon base stats for calculations.
+Implementation Notes
+Initial Pokémon Choice: At the start of the game, the player is presented with three randomly generated level 1 Pokémon to choose from.
+NPCs and Pokémon: All NPCs are generated with at least one Pokémon, adhering to the encounter and level rules based on their location on the map.
+Encounter and Battle Placeholder: Current implementation includes placeholders for battle and capture mechanics, which will be fully implemented in the next project phase
+
+
+
+Note : Run make all and then ./poke327 to run the game.
