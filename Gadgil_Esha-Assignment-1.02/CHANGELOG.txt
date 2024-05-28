@@ -1,0 +1,21 @@
+Date : Monday Feb 7  12:00
+Making changes to Assignment 1.01 to accomodate 1.02
+Adding Stuct CurrMap
+Modifying updateX and updateY
+
+
+
+Date: Monday Feb 7   12:30
+Generating 401 * 401 pointers array 
+
+
+Date: Monday Feb 7   2:00
+Adding various commands to switch maps
+
+
+Date:Monday  Feb 7   4:00
+Adding README, CHANGELOG, Makefile
+
+
+
+
