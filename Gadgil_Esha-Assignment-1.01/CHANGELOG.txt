@@ -1,0 +1,15 @@
+Date : Monday Jan 20  13:00
+Initialized basic map and added boulders
+
+
+
+Date: Monday Jan 20   13:30
+Added exits on four border and continuous paths 
+
+
+Date: Monday Jan 20   4:00
+Generated various terrains using queing 
+
+
+
+
